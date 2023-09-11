@@ -1,0 +1,33 @@
+{
+  "name": "settingsicons-discord-theme",
+  "version": "1.0.0",
+  "description": "Adds icons to Discord settings.",
+  "repository": "github:MiniDiscordThemes/SettingsIcons",
+  "author": "Saltssaumure <themes@saltssaumure.net>",
+  "contributors": [
+    "DevilBro (https://mwittrien.github.io/)",
+    "Saltssaumure <themes@saltssaumure.net>"
+  ],
+  "license": "GPL-2.0",
+  "private": true,
+  "scripts": {
+    "dev": "bd-scss dev",
+    "dev:rp": "replugged build theme --watch",
+    "dev:vc": "bd-scss dev:vc",
+    "bd": "bd-scss build",
+    "rp": "replugged bundle theme",
+    "lint": "prettier ./scss --check",
+    "lint:fix": "prettier ./scss --write --log-level warn",
+    "release": "replugged release"
+  },
+  "type": "module",
+  "dependencies": {
+    "@parcel/config-default": "^2.9.3",
+    "@parcel/core": "^2.9.3",
+    "@parcel/transformer-sass": "^2.9.3",
+    "@types/node": "^20.6.0",
+    "prettier": "^3.0.3",
+    "replugged": "^4.6.2",
+    "salt-bd-scss": "^1.1.0"
+  }
+}
