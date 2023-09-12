@@ -1,88 +1,60 @@
-﻿:root {
-    --use-settingsicons: calc(var(--settingsicons, 1) / (var(--settingsicons, 1) + 0.00000000000000000000001));
-    --settingsicons-size: 18px;
-    --settingsicons-gap: 14px;
+﻿@use "./data";
 
-    --settingsicons-default: url(https://minidiscordthemes.github.io/SettingsIcons/svg/questionmark.svg);
-    --settingsicons-myaccount: url(https://minidiscordthemes.github.io/SettingsIcons/svg/account.svg);
-    --settingsicons-profile: url(https://minidiscordthemes.github.io/SettingsIcons/svg/profile.svg);
-    --settingsicons-privacy: url(https://minidiscordthemes.github.io/SettingsIcons/svg/privacy.svg);
-    --settingsicons-family: url(https://minidiscordthemes.github.io/SettingsIcons/svg/family.svg);
-    --settingsicons-apps: url(https://minidiscordthemes.github.io/SettingsIcons/svg/apps.svg);
-    --settingsicons-sessions: url(https://minidiscordthemes.github.io/SettingsIcons/svg/sessions.svg);
-    --settingsicons-connections: url(https://minidiscordthemes.github.io/SettingsIcons/svg/connections.svg);
-    --settingsicons-friendrequests: url(https://minidiscordthemes.github.io/SettingsIcons/svg/vanityurl.svg);
-    --settingsicons-nitro: url(https://minidiscordthemes.github.io/SettingsIcons/svg/nitro.svg);
-    --settingsicons-boosts: url(https://minidiscordthemes.github.io/SettingsIcons/svg/boosts.svg);
-    --settingsicons-subscriptions: url(https://minidiscordthemes.github.io/SettingsIcons/svg/subscriptions.svg);
-    --settingsicons-gifts: url(https://minidiscordthemes.github.io/SettingsIcons/svg/gift.svg);
-    --settingsicons-billing: url(https://minidiscordthemes.github.io/SettingsIcons/svg/billing.svg);
-    --settingsicons-appearance: url(https://minidiscordthemes.github.io/SettingsIcons/svg/appearance.svg);
-    --settingsicons-accessibility: url(https://minidiscordthemes.github.io/SettingsIcons/svg/accessibility.svg);
-    --settingsicons-voice: url(https://minidiscordthemes.github.io/SettingsIcons/svg/voice.svg);
-    --settingsicons-powermode: url(https://minidiscordthemes.github.io/SettingsIcons/svg/party.svg);
-    --settingsicons-text: url(https://minidiscordthemes.github.io/SettingsIcons/svg/text.svg);
-    --settingsicons-notifications: url(https://minidiscordthemes.github.io/SettingsIcons/svg/notifications.svg);
-    --settingsicons-keybinds: url(https://minidiscordthemes.github.io/SettingsIcons/svg/keybinds.svg);
-    --settingsicons-language: url(https://minidiscordthemes.github.io/SettingsIcons/svg/language.svg);
-    --settingsicons-windows: url(https://minidiscordthemes.github.io/SettingsIcons/svg/windows.svg);
-    --settingsicons-streamermode: url(https://minidiscordthemes.github.io/SettingsIcons/svg/streamermode.svg);
-    --settingsicons-advanced: url(https://minidiscordthemes.github.io/SettingsIcons/svg/advanced.svg);
-    --settingsicons-activityprivacy: url(https://minidiscordthemes.github.io/SettingsIcons/svg/activityprivacy.svg);
-    --settingsicons-games: url(https://minidiscordthemes.github.io/SettingsIcons/svg/games.svg);
-    --settingsicons-overlay: url(https://minidiscordthemes.github.io/SettingsIcons/svg/overlay.svg);
-    --settingsicons-bd-settings: url(https://minidiscordthemes.github.io/SettingsIcons/svg/settings.svg);
-    --settingsicons-bd-changelog: url(https://minidiscordthemes.github.io/SettingsIcons/svg/changelog.svg);
-    --settingsicons-bd-customcss: url(https://minidiscordthemes.github.io/SettingsIcons/svg/custom.svg);
-    --settingsicons-bd-plugins: url(https://minidiscordthemes.github.io/SettingsIcons/svg/plugins.svg);
-    --settingsicons-bd-themes: url(https://minidiscordthemes.github.io/SettingsIcons/svg/themes.svg);
-    --settingsicons-bd-pluginrepo: url(https://minidiscordthemes.github.io/SettingsIcons/svg/pluginrepo.svg);
-    --settingsicons-bd-themerepo: url(https://minidiscordthemes.github.io/SettingsIcons/svg/themerepo.svg);
-    --settingsicons-changelog: url(https://minidiscordthemes.github.io/SettingsIcons/svg/changelog.svg);
-    --settingsicons-hypesquad: url(https://minidiscordthemes.github.io/SettingsIcons/svg/hypesquad.svg);
-    --settingsicons-experiments: url(https://minidiscordthemes.github.io/SettingsIcons/svg/experiments.svg);
-    --settingsicons-developer: url(https://minidiscordthemes.github.io/SettingsIcons/svg/developer.svg);
-    --settingsicons-hotspots: url(https://minidiscordthemes.github.io/SettingsIcons/svg/hotspots.svg);
-    --settingsicons-dismissable: url(https://minidiscordthemes.github.io/SettingsIcons/svg/dismissable.svg);
-    --settingsicons-paymentmodals: url(https://minidiscordthemes.github.io/SettingsIcons/svg/paymentmodals.svg);
-    --settingsicons-textplayground: url(https://minidiscordthemes.github.io/SettingsIcons/svg/textcomponent.svg);
-    --settingsicons-textcomponent: url(https://minidiscordthemes.github.io/SettingsIcons/svg/textcomponent.svg);
-    --settingsicons-logout: url(https://minidiscordthemes.github.io/SettingsIcons/svg/logout.svg);
+:root {
+    --use-si: calc(var(--si, 1) / (var(--si, 1) + 0.00000000000000000000001));
+    --si-size: 18px;
+    --si-gap: 14px;
+
+    // CSS variables for each settings tab
+    @each $id, $nospace in data.$pairs {
+        --si-#{$nospace}: url(https:minidiscordthemes.github.io/SettingsIcons/svg/#{$nospace}.svg);
+    }
+    --si-default: url(https://minidiscordthemes.github.io/SettingsIcons/svg/default.svg);
 }
 
-body #app-mount .sidebarRegion-1VBisG:has(.socialLinks-3ywLUf) {
-    flex-basis: calc(218px + (var(--use-settingsicons) * (var(--settingsicons-size) + var(--settingsicons-gap)))) !important;
-}
-body #app-mount .sidebar-nqHbhN:has(.socialLinks-3ywLUf),
-body #app-mount .layer-86YKbF ~ .layer-86YKbF .sidebar-nqHbhN:has(.socialLinks-3ywLUf) {
-    width: calc(218px + (var(--use-settingsicons) * (var(--settingsicons-size) + var(--settingsicons-gap)))) !important;
-}
-.sidebar-nqHbhN:has(.socialLinks-3ywLUf) .side-1lrxIh .item-2GWPIy {
-    display: flex;
-    align-items: center;
-}
-.sidebar-nqHbhN:has(.socialLinks-3ywLUf) .side-1lrxIh .item-2GWPIy > div {
-    flex: 1 1 auto;
+.sidebarRegion-1VBisG {
+    flex-basis: calc(218px + (var(--use-si) * (var(--si-size) + var(--si-gap)))) !important;
 }
 
-.sidebar-nqHbhN:has(.socialLinks-3ywLUf) .side-1lrxIh .item-2GWPIy::before {
-    content: "";
-    flex: 0 0 auto;
-    width: calc(var(--use-settingsicons) * var(--settingsicons-size));
-    height: calc(var(--use-settingsicons) * var(--settingsicons-size));
-    margin-right: calc(var(--use-settingsicons) * var(--settingsicons-size) / 2);
-    background: currentColor;
-    z-index: 2;
-    mask: var(--settingsicons-default) center/contain no-repeat;
-}
+// User settings
+.sidebar-nqHbhN {
+    width: calc(218px + (var(--use-si) * (var(--si-size) + var(--si-gap)))) !important;
 
-.bd-server-search ~ .item-2GWPIy::before {
-    display: none;
-}
-.sidebar-nqHbhN:has(.socialLinks-3ywLUf) .side-1lrxIh .item-2GWPIy .icon-3FU6Ir,
-.sidebar-nqHbhN:has(.socialLinks-3ywLUf) .side-1lrxIh .premiumLabel-3HPvdB > svg,
-.sidebar-nqHbhN:has(.socialLinks-3ywLUf) .side-1lrxIh .premiumLabel-3HPvdB img,
-.sidebar-nqHbhN:has(.socialLinks-3ywLUf) .side-1lrxIh .tabBarItemContainer-2HdIlr > svg,
-.sidebar-nqHbhN:has(.socialLinks-3ywLUf) .side-1lrxIh .tabBarItemContainer-2HdIlr img {
-    transform: scaleX(calc(1 - var(--use-settingsicons)));
+    :is(
+            .item-2GWPIy .icon-3FU6Ir,
+            .premiumLabel-3HPvdB > svg,
+            .premiumLabel-3HPvdB img,
+            .tabBarItemContainer-2HdIlr > svg,
+            .tabBarItemContainer-2HdIlr img
+        ) {
+        transform: scaleX(calc(1 - var(--use-si)));
+    }
+
+    // Settings tab
+    .side-1lrxIh .item-2GWPIy {
+        display: flex;
+        align-items: center;
+
+        &::before {
+            content: "";
+            flex: 0 0 auto;
+            width: calc(var(--use-si) * var(--si-size));
+            height: calc(var(--use-si) * var(--si-size));
+            margin-right: calc(var(--use-si) * var(--si-size) / 2);
+            background: currentColor;
+            z-index: 2;
+            mask: var(--si-default) center/contain no-repeat;
+        }
+
+        @each $id, $nospace in data.$pairs {
+            @debug $id, $nospace;
+            &[data-tab-id="#{$id}"]::before {
+                mask: var(--si-#{$nospace}) center/contain no-repeat;
+            }
+        }
+
+        > div {
+            flex: 1 1 auto;
+        }
+    }
 }

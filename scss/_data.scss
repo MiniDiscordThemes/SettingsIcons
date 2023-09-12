@@ -1,0 +1,27 @@
+@use "sass:string";
+@use "./list";
+
+@function _nospace($string, $sep: " ") {
+    $words: string.split(string.to-lower-case($string), $sep);
+    $nospace: "";
+    @each $word in $words {
+        @if $word != "&" {
+            $nospace: $nospace + $word;
+        }
+    }
+    @return $nospace;
+}
+
+$pairs: ();
+
+@each $id in list.$user {
+    $pairs: append($pairs, ($id, _nospace($id)));
+}
+
+@each $id in list.$server {
+    $pairs: append($pairs, (string.to-upper-case($id), _nospace($id, "_")));
+}
+
+@each $id in list.$channel {
+    $pairs: append($pairs, (string.to-upper-case($id), _nospace($id, "_")));
+}
