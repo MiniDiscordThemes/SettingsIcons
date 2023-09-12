@@ -1,7 +1,7 @@
 {
   "name": "settingsicons-discord-theme",
   "version": "1.0.0",
-  "description": "Adds icons to Discord settings.",
+  "description": "Adds icons to Discord settings, for use with Vencord plugin ThemeAttributes.",
   "repository": "github:MiniDiscordThemes/SettingsIcons",
   "author": "Saltssaumure <themes@saltssaumure.net>",
   "contributors": [
