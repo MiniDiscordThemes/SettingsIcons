@@ -37,7 +37,6 @@
 Enable the `ThemeAttributes` plugin in `Settings` > `Vencord` > `Plugins`.
 #### Local
 1. Download `SettingsIcons.theme.css`:
-    - [BetterDiscord store][release-bd]
     - [GitHub][release-bd-gh]
 2. Place the file in the themes folder:
     - `Settings` > `Vencord` > `Themes` > `Local Themes` > `Open Themes Folder`
