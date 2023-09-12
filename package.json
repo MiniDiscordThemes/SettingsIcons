@@ -12,7 +12,7 @@
   "private": true,
   "scripts": {
     "dev:vc": "bd-scss dev:vc",
-    "bd": "bd-scss build",
+    "vc": "bd-scss build",
     "lint": "prettier ./scss --check",
     "lint:fix": "prettier ./scss --write --log-level warn"
   },
