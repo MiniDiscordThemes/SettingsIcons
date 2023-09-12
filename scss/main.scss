@@ -9,7 +9,7 @@
 
     // CSS variables for each settings tab
     @each $id, $nospace in data.$pairs {
-        --si-#{$nospace}: url(https:minidiscordthemes.github.io/SettingsIcons/svg/#{$nospace}.svg);
+        --si-#{$nospace}: url(https://minidiscordthemes.github.io/SettingsIcons/svg/#{$nospace}.svg);
     }
     --si-default: url(https://minidiscordthemes.github.io/SettingsIcons/svg/default.svg);
 }
