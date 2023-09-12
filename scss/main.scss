@@ -1,0 +1,62 @@
+﻿@use "./data";
+
+:root {
+    --settingsicons: 1;
+    --si-size: 18px;
+    --si-gap: 14px;
+
+    --use-si: calc(var(--settingsicons, 1) / (var(--settingsicons, 1) + 0.00000000000000000000001));
+
+    // CSS variables for each settings tab
+    @each $id, $nospace in data.$pairs {
+        --si-#{$nospace}: url(https:minidiscordthemes.github.io/SettingsIcons/svg/#{$nospace}.svg);
+    }
+    --si-default: url(https://minidiscordthemes.github.io/SettingsIcons/svg/default.svg);
+}
+
+.sidebarRegion-1VBisG {
+    flex-basis: calc(218px + (var(--use-si) * (var(--si-size) + var(--si-gap)))) !important;
+}
+
+// User settings
+.sidebar-nqHbhN {
+    width: calc(218px + (var(--use-si) * (var(--si-size) + var(--si-gap)))) !important;
+
+    :is(
+            .item-2GWPIy .icon-3FU6Ir,
+            .premiumLabel-3HPvdB > svg,
+            .premiumLabel-3HPvdB img,
+            .tabBarItemContainer-2HdIlr > svg,
+            .tabBarItemContainer-2HdIlr img
+        ) {
+        transform: scaleX(calc(1 - var(--use-si)));
+    }
+
+    // Settings tab
+    .side-1lrxIh .item-2GWPIy {
+        display: flex;
+        align-items: center;
+
+        &::before {
+            content: "";
+            flex: 0 0 auto;
+            width: calc(var(--use-si) * var(--si-size));
+            height: calc(var(--use-si) * var(--si-size));
+            margin-right: calc(var(--use-si) * var(--si-size) / 2);
+            background: currentColor;
+            z-index: 2;
+            mask: var(--si-default) center/contain no-repeat;
+        }
+
+        @each $id, $nospace in data.$pairs {
+            @debug $id, $nospace;
+            &[data-tab-id="#{$id}"]::before {
+                mask: var(--si-#{$nospace}) center/contain no-repeat;
+            }
+        }
+
+        > div {
+            flex: 1 1 auto;
+        }
+    }
+}
