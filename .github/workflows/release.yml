@@ -13,7 +13,7 @@ jobs:
       contents: write
 
     steps:
-      - name: Checkout Git repository
+      - name: Checkout theme
         uses: actions/checkout@v2
 
       - name: Release .theme.css
