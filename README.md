@@ -20,6 +20,10 @@
 [si-author]:        https://github.com/mwittrien
 [si-license]:       https://github.com/mwittrien/BetterDiscordAddons/blob/master/LICENSE
 
+[ionicons]:         https://github.com/ionic-team/ionicons
+[ionicons-author]:  https://github.com/ionic-team
+[ionicons-license]: https://github.com/ionic-team/ionicons/blob/main/LICENSE
+
 [release-bd-gh]:    https://github.com/MiniDiscordThemes/SettingsIcons/releases/latest/download/SettingsIcons.theme.css "Get latest release"
 
 # SettingsIcons Discord Theme
@@ -69,6 +73,7 @@ Enable the `ThemeAttributes` plugin in `Settings` > `Vencord` > `Plugins`.
 
 ### Includes
 - [SettingsIcons][si] by [DevilBro][si-author] - [GPL-2.0][si-license]
+- [Ionicons][ionicons] by [Ionic][ionicons-author] - [MIT][ionicons-license]
 
 ## Questions or suggestions?
 - Post [an issue][issues] on GitHub.
