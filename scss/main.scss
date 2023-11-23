@@ -49,7 +49,7 @@
         }
 
         @each $id, $nospace in data.$pairs {
-            @debug $id, $nospace;
+            // @debug $id, $nospace;
             &[data-tab-id="#{$id}"]::before {
                 mask: var(--si-#{$nospace}) center/contain no-repeat;
             }
