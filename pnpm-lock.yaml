@@ -6,11 +6,11 @@ settings:
 
 dependencies:
   prettier:
-    specifier: ^3.0.3
-    version: 3.0.3
+    specifier: ^3.1.0
+    version: 3.1.0
   salt-bd-scss:
-    specifier: ^1.1.0
-    version: 1.1.0
+    specifier: ^1.2.1
+    version: 1.2.1
 
 packages:
 
@@ -30,7 +30,7 @@ packages:
       postcss: ^8.1.0
     dependencies:
       browserslist: 4.22.1
-      caniuse-lite: 1.0.30001559
+      caniuse-lite: 1.0.30001564
       fraction.js: 4.3.7
       normalize-range: 0.1.2
       picocolors: 1.0.0
@@ -55,14 +55,14 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001559
-      electron-to-chromium: 1.4.574
+      caniuse-lite: 1.0.30001564
+      electron-to-chromium: 1.4.592
       node-releases: 2.0.13
       update-browserslist-db: 1.0.13(browserslist@4.22.1)
     dev: false
 
-  /caniuse-lite@1.0.30001559:
-    resolution: {integrity: sha512-cPiMKZgqgkg5LY3/ntGeLFUpi6tzddBNS58A4tnTgQw1zON7u2sZMU7SzOeVH4tj20++9ggL+V6FDOFMTaFFYA==}
+  /caniuse-lite@1.0.30001564:
+    resolution: {integrity: sha512-DqAOf+rhof+6GVx1y+xzbFPeOumfQnhYzVnZD6LAXijR77yPtm9mfOcqOnT3mpnJiZVT+kwLAFnRlZcIz+c6bg==}
     dev: false
 
   /chalk@5.3.0:
@@ -85,8 +85,8 @@ packages:
       fsevents: 2.3.3
     dev: false
 
-  /electron-to-chromium@1.4.574:
-    resolution: {integrity: sha512-bg1m8L0n02xRzx4LsTTMbBPiUd9yIR+74iPtS/Ao65CuXvhVZHP0ym1kSdDG3yHFDXqHQQBKujlN1AQ8qZnyFg==}
+  /electron-to-chromium@1.4.592:
+    resolution: {integrity: sha512-D3NOkROIlF+d5ixnz7pAf3Lu/AuWpd6AYgI9O67GQXMXTcCP1gJQRotOq35eQy5Sb4hez33XH1YdTtILA7Udww==}
     dev: false
 
   /escalade@3.1.1:
@@ -153,8 +153,8 @@ packages:
     engines: {node: '>=4'}
     dev: false
 
-  /nanoid@3.3.6:
-    resolution: {integrity: sha512-BGcqMMJuToF7i1rt+2PWSNVnWIkGCU78jBG3RxO/bZlnZPK2Cmi2QaffxGO/2RvWi9sL+FAiRiXMgsyxQ1DIDA==}
+  /nanoid@3.3.7:
+    resolution: {integrity: sha512-eSRppjcPIatRIMC1U6UngP8XFcz8MQWGQdt1MTBQ7NaAmvXDfvNxbvWV3x2y6CdEUciCSsDHDQZbhYaB8QEo2g==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
     dev: false
@@ -190,13 +190,13 @@ packages:
     resolution: {integrity: sha512-PS08Iboia9mts/2ygV3eLpY5ghnUcfLV/EXTOW1E2qYxJKGGBUtNjN76FYHnMs36RmARn41bC0AZmn+rR0OVpQ==}
     engines: {node: ^10 || ^12 || >=14}
     dependencies:
-      nanoid: 3.3.6
+      nanoid: 3.3.7
       picocolors: 1.0.0
       source-map-js: 1.0.2
     dev: false
 
-  /prettier@3.0.3:
-    resolution: {integrity: sha512-L/4pUDMxcNa8R/EthV08Zt42WBO4h1rarVtK0K+QJG0X187OLo7l699jWw0GKuwzkPQ//jMFA/8Xm6Fh3J/DAg==}
+  /prettier@3.1.0:
+    resolution: {integrity: sha512-TQLvXjq5IAibjh8EpBIkNKxO749UEWABoiIZehEPiY4GNpVdhaFKqSTu+QrlU6D2dPAfubRmtJTi4K4YkQ5eXw==}
     engines: {node: '>=14'}
     hasBin: true
     dev: false
@@ -215,8 +215,8 @@ packages:
       mri: 1.2.0
     dev: false
 
-  /salt-bd-scss@1.1.0:
-    resolution: {integrity: sha512-2y9IODkLRiDZ0c3FoxTZE8Wgrh3yvU+lLmqBdoN1fn7wZMDg3nUAydu+IMmKZLmj5fkcYadovExr73EElieIfg==}
+  /salt-bd-scss@1.2.1:
+    resolution: {integrity: sha512-9HfRk7g1vh/7Fp/77uAP9d31fOeH8LX8j+RDHPQvnC3AWA28L9ZBYn97lGfE6O4LNJCqvJCsZMG9dqBrTMI1OA==}
     hasBin: true
     dependencies:
       autoprefixer: 10.4.16(postcss@8.4.31)

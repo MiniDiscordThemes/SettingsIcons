@@ -12,13 +12,14 @@
   "private": true,
   "scripts": {
     "dev:vc": "bd-scss dev:vc",
+    "dev:vt": "bd-scss dev:vt",
     "build:vc": "bd-scss build",
     "lint": "prettier ./scss --check",
     "lint:fix": "prettier ./scss --write --log-level warn"
   },
   "type": "module",
   "dependencies": {
-    "prettier": "^3.0.3",
-    "salt-bd-scss": "^1.1.0"
+    "prettier": "^3.1.0",
+    "salt-bd-scss": "^1.2.1"
   }
 }
