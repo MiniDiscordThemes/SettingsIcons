@@ -14,20 +14,20 @@
     --si-default: url(https://minidiscordthemes.github.io/SettingsIcons/svg/default.svg);
 }
 
-.sidebarRegion__60457 {
+.sidebarRegion__36437 {
     flex-basis: calc(218px + (var(--use-si) * (var(--si-size) + var(--si-gap)))) !important;
 }
 
 // User settings
-.sidebar__9e3e2 {
+.sidebar__02e8d {
     width: calc(218px + (var(--use-si) * (var(--si-size) + var(--si-gap)))) !important;
 
     :is(
-            .item-2GWPIy .icon-3FU6Ir,
-            .premiumLabel-3HPvdB > svg,
-            .premiumLabel-3HPvdB img,
-            .tabBarItemContainer-2HdIlr > svg,
-            .tabBarItemContainer-2HdIlr img
+            .item__48dda .icon_c69952,
+            .premiumLabel__68f78 > svg,
+            .premiumLabel__68f78 img,
+            .tabBarItemContainer__5d798 > svg,
+            .tabBarItemContainer__5d798 img
         ) {
         transform: scaleX(calc(1 - var(--use-si)));
     }

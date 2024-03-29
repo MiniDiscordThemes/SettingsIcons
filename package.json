@@ -19,7 +19,7 @@
   },
   "type": "module",
   "dependencies": {
-    "prettier": "^3.1.0",
-    "salt-bd-scss": "^1.2.1"
+    "prettier": "^3.2.5",
+    "salt-bd-scss": "^1.2.2"
   }
 }
