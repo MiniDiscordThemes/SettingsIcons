@@ -1,4 +1,4 @@
-[screenshot]:       https://cdn.discordapp.com/attachments/1142305515439923260/1151000047396339792/settingsicons.png
+[screenshot]:       https://github.com/MiniDiscordThemes/SettingsIcons/assets/8350274/7d68e35b-17c0-40e5-9605-84a4ddbba191
 
 [css-length]:       https://developer.mozilla.org/en-US/docs/Web/CSS/length
 [discord]:          https://discord.gg/uy8nKQVatp
@@ -16,7 +16,7 @@
 [license]:          https://github.com/MiniDiscordThemes/SettingsIcons/blob/main/LICENSE
 [.theme.css]:       https://github.com/MiniDiscordThemes/SettingsIcons/blob/main/SettingsIcons.theme.css
 
-[si]:               https://github.com/mwittrien/BetterDiscordAddons/tree/master/Themes/SettingsIcons
+[si]:               https://github.com/mwittrien/BetterDiscordAddons/blob/master/Themes/_res/SettingsIcons.css
 [si-author]:        https://github.com/mwittrien
 [si-license]:       https://github.com/mwittrien/BetterDiscordAddons/blob/master/LICENSE
 
