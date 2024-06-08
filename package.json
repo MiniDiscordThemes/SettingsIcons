@@ -9,7 +9,7 @@
     "Saltssaumure <themes@saltssaumure.net>",
     "JunkiEDM (https://github.com/JunkiEDM)"
   ],
-  "license": "GPL-2.0",
+  "license": "AGPL-3.0-or-later",
   "private": true,
   "scripts": {
     "dev:vc": "bd-scss dev:vc",

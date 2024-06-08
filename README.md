@@ -5,9 +5,6 @@
 
 [Vencord]:          https://github.com/Vendicated/Vencord
 
-[shield-donate]:    https://img.shields.io/badge/Donate-ko--fi-orange?style=flat-square&logo=kofi&logoColor=orange
-[ko-fi]:            https://ko-fi.com/saltssaumure "Buy me a coffee!"
-
 [shield-vc-dl]:     https://img.shields.io/github/downloads/MiniDiscordThemes/SettingsIcons/SettingsIcons.theme.css?color=purple&label=Downloads&style=flat-square
 [shield-repo-size]: https://img.shields.io/github/repo-size/MiniDiscordThemes/SettingsIcons?label=Repository&style=flat-square "Total size"
 
@@ -19,7 +16,6 @@
 [release-vc-gh]:    https://github.com/MiniDiscordThemes/SettingsIcons/releases/latest/download/SettingsIcons.theme.css "Get latest release"
 
 # SettingsIcons Discord Theme
-[![Buy me a coffee on ko-fi][shield-donate]][ko-fi]
 [![Vencord GitHub downloads][shield-vc-dl]][release-vc-gh]
 [![Total repository size][shield-repo-size]][github]
 
@@ -66,9 +62,9 @@
 - Copyright (c) 2021-2023 Mirco Wittrien (original)
 - Copyright (c) 2023-2024 MiniDiscordThemes (modifications in this repository)
 
-This theme is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License version 2 as published by the Free Software Foundation.
+This theme is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
-This theme is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the [GNU General Public License][license] for more details.
+This theme is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the [GNU Affero General Public License][license] for more details.
 
 ## Credits
 [si]:               https://github.com/mwittrien/BetterDiscordAddons/blob/master/Themes/_res/SettingsIcons.css
