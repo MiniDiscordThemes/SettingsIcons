@@ -14,12 +14,14 @@
   "scripts": {
     "dev:vc": "bd-scss dev:vc",
     "dev:vt": "bd-scss dev:vt",
-    "build:vc": "bd-scss build",
+    "build:css": "bd-scss build && postcss *.min.css -r --use autoprefixer --no-map",
     "lint": "prettier ./scss --check",
     "lint:fix": "prettier ./scss --write --log-level warn"
   },
+  "browserslist": "Chrome > 122",
   "type": "module",
-  "dependencies": {
+  "devDependencies": {
+    "postcss-cli": "^11.0.0",
     "prettier": "^3.2.5",
     "salt-bd-scss": "^1.2.2"
   }
