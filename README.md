@@ -26,7 +26,9 @@
 ## Installation
 <details><summary>Click to expand</summary>
 
-⚠️ This theme is designed for use with [Vencord][Vencord]; other client mods are not supported. Enable the `ThemeAttributes` plugin in `Settings` > `Vencord` > `Plugins`.
+⚠️ This theme is designed for use with [Vencord][Vencord]; other client mods are not supported.
+
+Enable the `ThemeAttributes` plugin in `Settings` > `Vencord` > `Plugins`.
 ### Local
 1. Download `SettingsIcons.theme.css`:
     - [GitHub][release-vc-gh]
@@ -40,11 +42,11 @@
 
 ## Customisation
 
-| Description                    | Variable name    | Valid values              | Default value |
-| ------------------------------ | ---------------- | ------------------------- | ------------- |
-| Enable SettingsIcon            | `--settingsicon` | `1` (on) or `0` (off)     | `1`           |
-| Icon size                      | `--si-size`      | Any [length][css-length]. | `18px`        |
-| Distance between icon and text | `--si-gap`       | Any [length][css-length]. | `14px`        |
+| Variable name     | Description               | Valid values              | Default value |
+| ----------------- | ------------------------- | ------------------------- | ------------- |
+| `--settingsicons` | Enable SettingsIcons      | `show` or `hide`          | `show`        |
+| `--si-size`       | Icon size                 | Any [length][css-length]. | `18px`        |
+| `--si-gap`        | Gap between icon and text | Any [length][css-length]. | `14px`        |
 
 <details><summary>Click to expand</summary>
 
@@ -73,7 +75,7 @@ This theme is distributed in the hope that it will be useful, but WITHOUT ANY WA
 [ionicons]:         https://github.com/ionic-team/ionicons
 [ionicons-author]:  https://github.com/ionic-team
 
-- [SettingsIcons][si] by [DevilBro][si-author] - GPL-2.0 license
+- [SettingsIcons][si] by [Mirco Wittrien (DevilBro)][si-author] - GPL-2.0 license
 - [Ionicons][ionicons] by [Ionic][ionicons-author] - MIT license
 
 ## Questions or suggestions?
