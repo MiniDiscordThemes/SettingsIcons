@@ -1,0 +1,8 @@
+// Create custom property with safe default URL for an icon
+@mixin create($setting) {
+    @property --si-#{$setting} {
+        syntax: "<url>";
+        inherits: true;
+        initial-value: url(https://minidiscordthemes.github.io/SettingsIcons/svg/#{$setting}.svg);
+    }
+}

@@ -1,24 +1,27 @@
 {
   "name": "settingsicons-discord-theme",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Adds icons to Discord settings, for use with Vencord plugin ThemeAttributes.",
   "repository": "github:MiniDiscordThemes/SettingsIcons",
   "author": "Saltssaumure <themes@saltssaumure.net>",
   "contributors": [
     "DevilBro (https://mwittrien.github.io/)",
-    "Saltssaumure <themes@saltssaumure.net>"
+    "Saltssaumure <themes@saltssaumure.net>",
+    "JunkiEDM (https://github.com/JunkiEDM)"
   ],
-  "license": "GPL-2.0",
+  "license": "AGPL-3.0-or-later",
   "private": true,
   "scripts": {
     "dev:vc": "bd-scss dev:vc",
     "dev:vt": "bd-scss dev:vt",
-    "build:vc": "bd-scss build",
+    "build:css": "bd-scss build && postcss *.min.css -r --use autoprefixer --no-map",
     "lint": "prettier ./scss --check",
     "lint:fix": "prettier ./scss --write --log-level warn"
   },
+  "browserslist": "Chrome > 122",
   "type": "module",
-  "dependencies": {
+  "devDependencies": {
+    "postcss-cli": "^11.0.0",
     "prettier": "^3.2.5",
     "salt-bd-scss": "^1.2.2"
   }

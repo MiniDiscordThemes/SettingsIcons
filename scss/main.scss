@@ -1,62 +1,77 @@
 ﻿@use "./data";
+@use "./property";
+
+// Property for each settings tab
+@each $id, $nospace in data.$pairs {
+    @include property.create($nospace);
+}
+// Fallback
+@include property.create("default");
+
+@property --settingsicons {
+    syntax: "show | hide";
+    inherits: false;
+    initial-value: show;
+}
+@property --si-size {
+    syntax: "<length>";
+    inherits: true;
+    initial-value: 18px;
+}
+@property --si-gap {
+    syntax: "<length>";
+    inherits: true;
+    initial-value: 14px;
+}
 
 :root {
-    --settingsicons: 1;
-    --si-size: 18px;
-    --si-gap: 14px;
-
-    --use-si: calc(var(--settingsicons, 1) / (var(--settingsicons, 1) + 0.00000000000000000000001));
-
-    // CSS variables for each settings tab
-    @each $id, $nospace in data.$pairs {
-        --si-#{$nospace}: url(https://minidiscordthemes.github.io/SettingsIcons/svg/#{$nospace}.svg);
-    }
-    --si-default: url(https://minidiscordthemes.github.io/SettingsIcons/svg/default.svg);
+    container: root;
 }
 
-.sidebarRegion__36437 {
-    flex-basis: calc(218px + (var(--use-si) * (var(--si-size) + var(--si-gap)))) !important;
-}
-
-// User settings
-.sidebar__02e8d {
-    width: calc(218px + (var(--use-si) * (var(--si-size) + var(--si-gap)))) !important;
-
-    :is(
-            .item__48dda .icon_c69952,
-            .premiumLabel__68f78 > svg,
-            .premiumLabel__68f78 img,
-            .tabBarItemContainer__5d798 > svg,
-            .tabBarItemContainer__5d798 img
-        ) {
-        transform: scaleX(calc(1 - var(--use-si)));
+@container root style(--settingsicons: show) {
+    .sidebarRegion__36437 {
+        flex-basis: calc(218px + var(--si-size) + var(--si-gap)) !important;
     }
 
-    // Settings tab
-    .side_b4b3f6 .item__48dda {
-        display: flex;
-        align-items: center;
+    // User settings
+    .sidebar__02e8d {
+        width: calc(218px + var(--si-size) + var(--si-gap)) !important;
 
-        &::before {
-            content: "";
-            flex: 0 0 auto;
-            width: calc(var(--use-si) * var(--si-size));
-            height: calc(var(--use-si) * var(--si-size));
-            margin-right: calc(var(--use-si) * var(--si-size) / 2);
-            background: currentColor;
-            z-index: 2;
-            mask: var(--si-default) center/contain no-repeat;
+        :is(
+                .item__48dda .icon_c69952,
+                .premiumLabel__68f78 > svg,
+                .premiumLabel__68f78 img,
+                .tabBarItemContainer__5d798 > svg,
+                .tabBarItemContainer__5d798 img
+            ) {
+            display: none;
         }
 
-        @each $id, $nospace in data.$pairs {
-            // @debug $id, $nospace;
-            &[data-tab-id="#{$id}"]::before {
-                mask: var(--si-#{$nospace}) center/contain no-repeat;
+        // Settings tab
+        .side_b4b3f6 .item__48dda {
+            display: flex;
+            align-items: center;
+
+            &::before {
+                content: "";
+                flex: 0 0 auto;
+                width: var(--si-size);
+                height: var(--si-size);
+                margin-right: calc(var(--si-size) / 2);
+                background: currentColor;
+                z-index: 2;
+                mask: var(--si-default) center/contain no-repeat;
             }
-        }
 
-        > div {
-            flex: 1 1 auto;
+            @each $id, $nospace in data.$pairs {
+                &[data-tab-id="#{$id}"]::before {
+                    mask: var(--si-#{$nospace}) center/contain no-repeat;
+                }
+            }
+
+            > div {
+                flex: 1 1 auto;
+            }
         }
     }
 }
